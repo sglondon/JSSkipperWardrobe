@@ -248,6 +248,7 @@
     <Content Include="Content\images\potentialbackground2.jpg" />
     <Content Include="Content\images\potentialbackground3.jpg" />
     <Content Include="Content\images\potentialbackground4.jpg" />
+    <Content Include="Content\JavaScript.js" />
     <Content Include="Content\OutfitStyle.css" />
     <Content Include="Content\ShoeDetStyle.css" />
     <Content Include="Content\ShoeStyle.css" />
