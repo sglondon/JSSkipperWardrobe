@@ -1,0 +1,37 @@
+﻿@model WardrobeApp.Models.Accessory
+<link href="~/Content/AccessDetStyle.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Accessory Details</h2>
+
+<div>
+    <div class="card border-primary mb-3" width:75px;>
+
+        <div class="card-header">@Html.DisplayFor(model => model.AccessoryName)</div>
+        <div class="card-body text-primary">
+            <h3 class="card-title"></h3>
+            <img  src="@Html.DisplayFor(model => model.AccessoryPhoto)">
+            <p class="card-text">Color:  @Html.DisplayFor(model => model.AccessoryColor)</p>
+            <p class="card-text">Season:  @Html.DisplayFor(model => model.AccessorySeason) </p>
+
+
+
+
+            <div class="card-footer">
+         Occasion:  @Html.DisplayFor(model => model.AccessoryOccasion)
+          </div>
+        </div>
+
+    </div>
+    <p>
+        
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>
+
+
+
+
+    

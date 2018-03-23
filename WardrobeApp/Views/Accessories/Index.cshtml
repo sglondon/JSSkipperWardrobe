@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WardrobeApp.Models.Accessory>
+<link href="~/Content/accesstyle.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<h2 id="accessory">Accessories</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="row">
+    @foreach (var item in Model)
+
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                @*<h3 id="capacc">       @Html.DisplayFor(modelItem => item.Title)</h3>*@
+                <p>@Html.DisplayFor(modelItem => item.AccessoryName)</p>
+                <p>
+                    <img src="@Html.DisplayFor(modelItem => item.AccessoryPhoto)" />
+                </p>
+            </div>
+            @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.AccessoryID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID })
+        </div>
+
+
+
+
+
+
+
+
+        
+    }
+</div>
+
+

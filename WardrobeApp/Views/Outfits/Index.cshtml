@@ -1,0 +1,66 @@
+﻿@model IEnumerable<WardrobeApp.Models.Outfit>
+<link href="~/Content/OutfitStyle.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Outfits</h2>
+<p>Skipper has already picked out some of her favorite outfits, now it's your turn!</p>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Top
+        </th>
+        <th>
+            Bottom
+        </th>
+        <th>
+            Shoes
+        </th>
+        <th>
+            Accessory
+        </th>
+
+
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+        <td>
+            <img src="@Html.DisplayFor(modelItem => item.Top.TopPhoto)" />
+        </td>
+        <td>
+            <img src="@Html.DisplayFor(modelItem => item.Bottom.BottomPhoto)" />
+        </td>
+        <td>
+            <img src="@Html.DisplayFor(modelItem => item.Sho.ShoePhoto)" />
+        </td>
+
+        <td>
+            <img src="@Html.DisplayFor(modelItem => item.Accessory.AccessoryPhoto)" />
+        </td>
+
+
+
+
+
+
+        
+        
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.OutfitID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID })
+        </td>
+    </tr>
+}
+
+</table>

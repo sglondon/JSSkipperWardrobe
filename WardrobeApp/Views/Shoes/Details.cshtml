@@ -1,0 +1,43 @@
+﻿@model WardrobeApp.Models.Sho
+<link href="~/Content/ShoeDetStyle.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Details";
+}
+
+<h1>Shoe Details</h1>
+
+<div>
+    <div>
+        <div class="card border-primary mb-3" width:75px;>
+
+            <div class="card-header">@Html.DisplayFor(model => model.ShoeName)</div>
+            <div class="card-body text-primary">
+                <h3 class="card-title"></h3>
+                <img src="@Html.DisplayFor(model => model.ShoePhoto)">
+                <p class="card-text">Color:  @Html.DisplayFor(model => model.ShoeColor)</p>
+                <p class="card-text">Season:  @Html.DisplayFor(model => model.ShoeSeason) </p>
+
+
+
+
+                <div class="card-footer">
+                    Occasion:  @Html.DisplayFor(model => model.ShoeOccasion)
+                </div>
+            </div>
+            <p>@Html.ActionLink("Back to List", "Index")</p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  

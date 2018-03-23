@@ -1,0 +1,46 @@
+﻿@model WardrobeApp.Models.Top
+<link href="~/Content/TopDetStyle.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Top Details</h2>
+
+<div>
+    <div class="card border-primary mb-3" width:75px;>
+
+        <div class="card-header">@Html.DisplayFor(model => model.TopName)</div>
+        <div class="card-body text-primary">
+            <h3 class="card-title"></h3>
+            <img src="@Html.DisplayFor(model => model.TopPhoto)">
+            <p class="card-text">Color:  @Html.DisplayFor(model => model.TopColor)</p>
+            <p class="card-text">Season:  @Html.DisplayFor(model => model.TopSeason) </p>
+
+
+
+
+            <div class="card-footer">
+                Occasion:  @Html.DisplayFor(model => model.TopOccasion)
+            </div>
+        </div>
+        <p>
+           
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
