@@ -29,7 +29,7 @@ textarea {
 
 body {
     font-family: 'Annie Use Your Telescope';
-    font-size: 22px;
+    font-size: medium;
 }
 
     /*Styling Home Page & Pics*/
@@ -85,3 +85,7 @@ div.card-header{
 p.align{
     text-align:right;
 }
+
+/*h2#meetSkipper {
+    font-size: 75px;
+}*/

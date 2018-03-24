@@ -14,13 +14,16 @@ function Greeting() {
 
 
 function mouseOver() {
-    var x = document.getElementById("meetSkipper")
-    document.getElementById("meetSkipper").style.color = "red" ;
     
-
+    document.getElementById("meetSkipper").style.color = "red";
+    
+    document.getElementById("meetSkipper").style.fontSize = "50px";
+    
 }
 
 function mouseOut() {
+    document.getElementById("meetSkipper").style.fontSize = "30px";
     document.getElementById("meetSkipper").style.color = "black";
+    
 }
 
