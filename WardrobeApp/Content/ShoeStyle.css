@@ -18,3 +18,10 @@ h2#shoes {
 a {
     color: black;
 }
+
+input {
+    font-size: 20px;
+    color: #1c6e8c;
+    text-align:center;
+    font-weight:bold;
+}

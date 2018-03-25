@@ -9,22 +9,29 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<div class="row">
-    @foreach (var item in Model)
+<p>
+    To take a fun quiz, click the button!
+    <button type="button" class="btn" onclick="getFavorites()" ;">Click Here</button>
+<p>
+    
 
-    {
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <p>@Html.DisplayFor(modelItem => item.BottomName)</p>
-            <p><img src="@Html.DisplayFor(modelItem => item.BottomPhoto)" /></p>
-        </div>
-        @Html.ActionLink("Edit", "Edit", new { id = item.BottomID }) |
-        @Html.ActionLink("Details", "Details", new { id = item.BottomID }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })
-        </div>
+    <div class="row">
+        @foreach (var item in Model)
 
-
-        
-        }
-
+        {
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+    <p>@Html.DisplayFor(modelItem => item.BottomName)</p>
+    <p><img src="@Html.DisplayFor(modelItem => item.BottomPhoto)" /></p>
     </div>
+    @Html.ActionLink("Edit", "Edit", new { id = item.BottomID }) |
+    @Html.ActionLink("Details", "Details", new { id = item.BottomID }) |
+    @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })
+    </div>
+
+
+
+}
+
+        </div>
+

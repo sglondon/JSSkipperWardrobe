@@ -1,17 +1,14 @@
-﻿//On loading the home index page, greet the user, get their name and display it
+﻿
+//On loading the home index page, greet the user, get their name and display it
 
 function Greeting() {
     var x = document.getElementById("jumbomain");
     var userResponse = prompt("Welcome to Skipper's Wardrobe. Please enter your name?");
-    x.getElementsByTagName('h2')[0].innerText = "Welcome to Skipper's Wardrobe " + userResponse;
+    x.getElementsByTagName('h2')[0].innerText = "Welcome to Skipper's Wardrobe " + userResponse + '!';
 }
 
 //change the color and size of the font when mousing over Meet Skipper
-
-
-
-
-
+//on the index page
 
 function mouseOver() {
     
@@ -26,4 +23,72 @@ function mouseOut() {
     document.getElementById("meetSkipper").style.color = "black";
     
 }
+
+//directs user to another website and confirms they want to leave the page
+//in the Outfits view
+
+function Redirect() {
+    var confirmButton = document.getElementById(ebay);
+    var userResponse = confirm('You are about to leave this site. If you want to stay, please select cancel.');
+    //var displayContainer = document.getElementById('Headed to Ebay');
+    var displayMessage = '';
+    
+    if (userResponse) {
+        var win = window.open("http://ebay.to/2ud8XOO", '_blank');
+        win.focus();
+    }
+}
+
+//uses oncopy() from homework to copy a sentence and display a message in the Tops view
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Skipper says 'Hi friend!'"
+}
+
+
+//changes the footer text when hovered over and changes back when not hovered
+
+function changeFooter()
+{
+document.getElementById("footer").style.color = "darkpink";
+document.getElementById("footer").style.fontSize = "20px";
+document.getElementById("footer").innerHTML = "Created by Susan London, 2018"
+    }
+function changeBack() {
+    document.getElementById("footer").style.fontSize = "20px";
+    document.getElementById("footer").style.color = "black";
+    document.getElementById("footer").innerHTML =  "Skipper's Wardrobe"
+
+}
+
+
+//dynamically allow user to remove content from the shoe page
+
+function cutText() {
+    document.getElementById("remove").innerHTML = "You're a good listener!";
+    document.getElementById("remove").style.color = "black";
+    document.getElementById("remove").style.fontSize = "20px";
+    document.getElementById("remove").style.fontweight = "bold";
+}
+
+//create an array and tell the user what's in it 
+//using a button and quiz in the Bottoms view
+
+function getFavorites() {
+
+    var myArray = new Array(0);
+    var color = prompt('What is your favorite color?');
+    myArray.push(color);
+
+    var animal = prompt('What is your favorite animal?')
+    myArray.push(animal);
+
+    var food = prompt('What is your favorite food?');
+    myArray.push(food);
+    
+    alert('your answers were' + ' '  + myArray + ' ');  
+    }
+   
+
+    
 

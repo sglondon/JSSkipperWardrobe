@@ -11,7 +11,7 @@
     @Scripts.Render("~/bundles/modernizr")
     <script src="~/Content/JavaScript.js"></script>
 </head>
-<body onload="Greeting()">
+<body >
     <div class="navbar" style="background-color: 	#4ee4e7 ; navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -39,7 +39,10 @@
         <hr />
         <br />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Skipper's Wardrobe </p>
+            @*<h2 id="meetSkipper" onmouseover="mouseOver()" onmouseout="mouseOut()">Meet Skipper</h2>*@
+
+            <p id="footer" onmouseover="changeFooter()"  onmouseout="changeBack()" > Skipper's Wardrobe  </p>
+
         </footer>
     </div>
 

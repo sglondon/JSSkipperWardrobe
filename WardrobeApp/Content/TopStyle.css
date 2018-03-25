@@ -18,3 +18,14 @@ h2#tops {
 a {
     color: black;
 }
+
+p#demo{
+    font-size: 30px;
+    color:hotpink;
+}
+
+input{
+    color:hotpink;
+    font-size:20px;
+    text-align:center;
+}

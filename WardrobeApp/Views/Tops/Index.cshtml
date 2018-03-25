@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<WardrobeApp.Models.Top>
+<script src="~/Content/JavaScript.js"></script>
 <link href="~/Content/TopStyle.css" rel="stylesheet" />
 @{
     ViewBag.Title = "Index";
@@ -8,7 +9,12 @@
 
 <p>
     @Html.ActionLink("Create New", "Create")
+    
+    <input type="text" oncopy="myFunction()" value="Please copy for a message">
 </p>
+
+<p id="demo"></p>
+
 <div class="row">
     @foreach (var item in Model)
 
@@ -22,9 +28,6 @@
             @Html.ActionLink("Details", "Details", new { id = item.TopID }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.TopID })
         </div>
-            
-
-         
 
 
 
@@ -32,6 +35,9 @@
 
 
 
-            }
 
-            </div>
+
+
+    }
+
+</div>

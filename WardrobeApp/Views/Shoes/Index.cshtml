@@ -4,8 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2 id="shoes">Shoes</h2>
+<h2 >Shoes</h2>
+<input type="text" oncut="cutText()" value="Cut this text!">
 
+<p id="remove"></p>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -13,22 +15,22 @@
     @foreach (var item in Model)
 
     {
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <p>@Html.DisplayFor(modelItem => item.ShoeName)</p>
-            <p><img src="@Html.DisplayFor(modelItem => item.ShoePhoto)" /></p>
-        </div>
-        @Html.ActionLink("Edit", "Edit", new { id = item.ShoeID }) |
-        @Html.ActionLink("Details", "Details", new { id = item.ShoeID }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.ShoeID })
-        </div>
-
-      
-
-
-
-
-              }
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <p>@Html.DisplayFor(modelItem => item.ShoeName)</p>
+                <p><img src="@Html.DisplayFor(modelItem => item.ShoePhoto)" /></p>
             </div>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ShoeID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ShoeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ShoeID })
+        </div>
 
-        
+
+
+
+
+
+    }
+</div>
+
+

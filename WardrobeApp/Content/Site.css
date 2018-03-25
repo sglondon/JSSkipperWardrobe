@@ -85,7 +85,9 @@ div.card-header{
 p.align{
     text-align:right;
 }
+button.btn {
+    background-color: #f097c4;
+    color:white;
+    font-size:large;
+}
 
-/*h2#meetSkipper {
-    font-size: 75px;
-}*/
