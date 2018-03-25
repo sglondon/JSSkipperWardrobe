@@ -11,6 +11,12 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+
 <div class="row">
     @foreach (var item in Model)
 
@@ -18,7 +24,9 @@
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
                 @*<h3 id="capacc">       @Html.DisplayFor(modelItem => item.Title)</h3>*@
-                <p>@Html.DisplayFor(modelItem => item.AccessoryName)</p>
+
+                <p id="myList">@Html.DisplayFor(modelItem => item.AccessoryName)</p>
+
                 <p>
                     <img src="@Html.DisplayFor(modelItem => item.AccessoryPhoto)" />
                 </p>
@@ -35,7 +43,7 @@
 
 
 
-        
+
     }
 </div>
 

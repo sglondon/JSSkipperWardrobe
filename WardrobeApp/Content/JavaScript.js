@@ -52,12 +52,12 @@ function changeFooter()
 {
 document.getElementById("footer").style.color = "darkpink";
 document.getElementById("footer").style.fontSize = "20px";
-document.getElementById("footer").innerHTML = "Created by Susan London, 2018"
+document.getElementById("footer").innerHTML = "Created by Susan London"
     }
 function changeBack() {
     document.getElementById("footer").style.fontSize = "20px";
     document.getElementById("footer").style.color = "black";
-    document.getElementById("footer").innerHTML =  "Skipper's Wardrobe"
+    document.getElementById("footer").innerHTML =  "&copy; 2018  Skipper's Wardrobe"
 
 }
 
@@ -89,6 +89,33 @@ function getFavorites() {
     alert('your answers were' + ' '  + myArray + ' ');  
     }
    
+//dynamically show all items meeting a certain criteria 
+//in the Accessories view
+
+function myFunction() {
+    var dynArray = new Array(8);
+
+    var x = document.getElementById("myList").innerHTML;
+    
+    
 
     
+    for (i = 0; i < dynArray.length; i++) {
+        x += dynArray[i] + "<br>";
+        
+    }
+    //document.getElementById("demo").innerHTML = x;
+    ////alert('here');
+    //alert(x);
+    //x = x++
+    //document.getElementById("demo").innerHTML = x;
+    alert(x);
+    //if (x === '*Purse') {
+    //    alert(x);
+    //} else {
+    //    alert('none');
+    //}
+    
+    }
+
 
