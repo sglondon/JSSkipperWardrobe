@@ -42,6 +42,7 @@ function Redirect() {
 //uses oncopy() from homework to copy a sentence and display a message in the Tops view
 
 function myFunction() {
+
     document.getElementById("demo").innerHTML = "Skipper says 'Hi friend!'"
 }
 
@@ -104,7 +105,7 @@ function myFunction() {
         x += dynArray[i] + "<br>";
         
     }
-    //document.getElementById("demo").innerHTML = x;
+    document.getElementById("demo").innerHTML = x;
     ////alert('here');
     //alert(x);
     //x = x++

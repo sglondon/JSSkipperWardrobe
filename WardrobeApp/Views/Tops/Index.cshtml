@@ -10,12 +10,17 @@
 <p>
     @Html.ActionLink("Create New", "Create")
     
-    <input type="text" oncopy="myFunction()" value="Please copy for a message">
+        <input type="text" oncopy="myFunction()" value="Please copy for a message">
 </p>
 
 <p id="demo"></p>
 
+
+
+
+
 <div class="row">
+
     @foreach (var item in Model)
 
     {
